@@ -107,6 +107,9 @@ export default function ResponsiveAppBar() {
               <MenuItem key={2} onClick={() => router.push('/category')}>
                 <Typography sx={{ textAlign: 'center' }}>Categories</Typography>
               </MenuItem>
+              <MenuItem key={2} onClick={() => router.push('/category')}>
+                <Typography sx={{ textAlign: 'center' }}>Customers</Typography>
+              </MenuItem>
 
             </Menu>
           </Box>
@@ -144,6 +147,14 @@ export default function ResponsiveAppBar() {
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
               Categories
+            </Button>
+
+            <Button
+              key={2}
+              onClick={() => router.push('/customer')}
+              sx={{ my: 2, color: 'white', display: 'block' }}
+            >
+              Customer
             </Button>
 
             {/* {pages.map((page) => (
